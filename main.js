@@ -42,6 +42,7 @@ fileinput.addEventListener('change', e => {
   html5QrCodeFile.scanFile(imageFile, true)
   .then(decodedText => {
     // success, use decodedText
+ document.getElementById('result-text').value = decodedText;
     console.log(decodedText);
   })
   .catch(err => {

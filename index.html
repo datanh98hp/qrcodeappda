@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="reader" width="200px"></div>
+      
+      <div class="result-box">
+        <div id="reader-file" width="200px"></div>
+        <div>
+          <input type="file" id="qr-input-file" accept="image/*" capture>
+        </div>
+        <input type="text" id="result-text" value="" />
+        <button onclick="copyText()">copy text</button>
+      </div>
+    </div>
+    <script
+      src="https://unpkg.com/html5-qrcode"
+      type="text/javascript"
+    ></script>
+    <script src="https://raw.githubusercontent.com/mebjas/html5-qrcode/master/minified/html5-qrcode.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
